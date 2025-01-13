@@ -1,14 +1,23 @@
 const express = require('express');
+
+const mongodb = require('./data/database.js');
 const app = express();
 
 
 // Porta padrão
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 // Rota inicial (root)
-app.get('/', require('./routes'));
+app.use('/', require('./routes'));
 
-// Iniciar o servidor
-app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+
+mongodb.initDb((err) => {
+  if (err) {
+    console.log(err);
+  }
+  else{
+    app.listen(PORT, () => {
+      console.log(`Server is running on http://localhost:${PORT}`);
+    });
+  }
 });
