@@ -1,0 +1,25 @@
+{
+  "name": "cse341-project-contacts",
+  "version": "1.0.0",
+  "description": "Contacts Api for CSE341",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToKolob/CSE341-project-contacts.git"
+  },
+  "author": "Unlicenced Programmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ToKolob/CSE341-project-contacts/issues"
+  },
+  "homepage": "https://github.com/ToKolob/CSE341-project-contacts#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
