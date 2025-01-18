@@ -5,9 +5,10 @@
     "description": "Contacts API for CSE341 project",
     "version": "1.0.0"
   },
-  "host": "https://cse341-project-contacts.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
